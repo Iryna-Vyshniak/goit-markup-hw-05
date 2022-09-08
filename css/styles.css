@@ -124,8 +124,7 @@ body {
   margin: -1px;
 }
 
-/* ================================================================================= */
-/* HEADER */
+/* ============================  HEADER  ===================================================== */
 
 .page-header {
   /* position: fixed;
@@ -224,7 +223,7 @@ body {
 .link-current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   content: '';
   display: block;
@@ -264,14 +263,13 @@ body {
   fill: currentColor;
 }
 
-/* ===================================================================================================================================*/
-/* HERO */
+/* ===========================  HERO ===============================================================================*/
 
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  /* min-height: 600px; */
+
   margin-left: auto;
   margin-right: auto;
 
@@ -334,8 +332,7 @@ body {
   box-shadow: var(--hero-btn-shadow);
 }
 
-/* ==================================================================================================================================== */
-/* SECTIONS */
+/* ====================================== SECTIONS ================================================================ */
 
 .section-title {
   margin-top: 0;
@@ -388,15 +385,16 @@ body {
   min-height: 120px;
   margin-top: 0;
   margin-bottom: 30px;
-  padding: 25px 101px;
 
   background: var(--bg-ghost-white);
   border-radius: 4px;
 }
 
-/* .section-set .set-item:not(:last-child) {
+/* 
+.section-set .set-item:not(:last-child) {
   margin-right: 30px;
-} */
+} 
+*/
 
 /* the same styles for advantages set-item & footer slogan */
 .subtitle {
@@ -542,7 +540,7 @@ body {
   border: 1px solid var(--border-clients);
   border-radius: 4px;
 
-  /* transition: color var(--timing-function), border var(--timing-function); */
+  transition: color var(--timing-function), border var(--timing-function);
 }
 
 .logo-clients:hover,
@@ -586,7 +584,7 @@ body {
   color: var(--white-transparent-color);
 }
 
-/* приєднуйтесь */
+/* ------------------------------------------------приєднуйтесь-------------------------------------- */
 /* socials-item  */
 .footer-socials {
   margin-left: 70px;
@@ -680,6 +678,17 @@ body {
   margin-bottom: 0;
 }
 
+.project-content {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  border-left: 1px solid var(--border-whisper-grey);
+  border-right: 1px solid var(--border-whisper-grey);
+  border-bottom: 1px solid var(--border-whisper-grey);
+}
+
 .project-title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -693,17 +702,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.9;
-}
-
-.project-content {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-
-  border-left: 1px solid var(--border-whisper-grey);
-  border-right: 1px solid var(--border-whisper-grey);
-  border-bottom: 1px solid var(--border-whisper-grey);
 }
 
 .project-item:hover,
@@ -742,7 +740,6 @@ body {
 
 .project-link:hover .cards-overlay,
 .project-link:focus .cards-overlay {
-  /* opacity: 1; */
   transform: translateY(0);
 }
 
@@ -763,6 +760,7 @@ body {
 }
 
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
