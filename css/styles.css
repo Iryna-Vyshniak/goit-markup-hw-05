@@ -223,7 +223,7 @@ body {
 .link-current::after {
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
 
   content: '';
   display: block;
